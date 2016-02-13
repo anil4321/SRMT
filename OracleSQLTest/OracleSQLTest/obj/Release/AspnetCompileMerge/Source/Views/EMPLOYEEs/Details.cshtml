@@ -1,0 +1,210 @@
+﻿@model OracleSQLTest.Models.EMPLOYEE
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EMPLOYEE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_TYPE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_TYPE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SERV_CENTER_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SERV_CENTER_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OFFICE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OFFICE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCO_DESIGN_CD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCO_DESIGN_CD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_ZIPCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_ZIPCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_FNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_FNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_MNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_MNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_LNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_LNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_SSN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_SSN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_TITLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_TITLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_SUPERVISOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_SUPERVISOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_WORK_PH_NUM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_WORK_PH_NUM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_HOME_PH_NUM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_HOME_PH_NUM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_WORK_FAX_NUM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_WORK_FAX_NUM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_EMAIL_ADDR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_EMAIL_ADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_MOTHER_NM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_MOTHER_NM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_STATUS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_STATUS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USER_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USER_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CREATED_BY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CREATED_BY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CREATED_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CREATED_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_UPDATED_BY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_UPDATED_BY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_UPDATED_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_UPDATED_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPL_UID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPL_UID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EMPL_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
