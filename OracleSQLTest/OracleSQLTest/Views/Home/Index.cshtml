@@ -1,4 +1,5 @@
-﻿@{
+@using System.Web.Mvc.Html
+@{
     ViewBag.Title = "Home Page";
 }
 <style>
@@ -14,6 +15,10 @@ ul.nav li a:hover, ul.nav li a:active {
 ul.nav li.active a {
     color: #000000 !important;
 }
+.btn{
+  border:0px solid transparent; /* this was 1px earlier */
+  color: #000000;
+ }
 </style>
 
 <div class="row">
@@ -28,15 +33,24 @@ ul.nav li.active a {
     </div>
 
 
-    <div class="col-md-4 table-bordered img-rounded">
-        <h3 class="text-center alert-success">My SRMT Profile</h3>
-        <div class="list-group">
-            @foreach (var item in ViewBag.crisUser)
+    <form role="form">
+        <div class="col-md-2 table-bordered img-rounded">
+            <h3 class="text-center">My Profile</h3>
+            <div class="list-group">
+                @foreach (var item in ViewBag.crisUser)
             {
-                <a class="list-group-item text-center" href="http://asp.net" title="Click here to access @item.LOGIN_NAME">
-                    <h4 class="list-group-item-heading">@item.LOGIN_NAME &raquo;</h4>
-                </a>
-            }
+
+                    @Html.ActionLink((string)item.LOGIN_NAME, "GoProfile", new { id = (string)item.LOGIN_NAME }, new { @title = "Client here to access " + @item.LOGIN_NAME, @class = "list-group-item text-center" })
+                }
+
+            </div>
         </div>
-    </div>
+    </form>
+
+</div>
+
+<div class="text-center">
+    <a class="btn btn-default text-center" href="/Home/GoProfile" title="Click here to access the Accessibility Document">
+        <h4 class="text-center">Accessibility</h4>
+    </a>
 </div>
