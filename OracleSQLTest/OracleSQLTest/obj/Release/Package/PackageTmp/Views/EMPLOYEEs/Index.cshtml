@@ -1,0 +1,171 @@
+﻿@model IEnumerable<OracleSQLTest.Models.EMPLOYEE>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_TYPE_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SERV_CENTER_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OFFICE_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCO_DESIGN_CD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_ZIPCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_FNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_MNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_LNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_SSN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_TITLE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_SUPERVISOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_WORK_PH_NUM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_HOME_PH_NUM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_WORK_FAX_NUM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_EMAIL_ADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_MOTHER_NM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_STATUS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATED_BY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATED_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_UPDATED_BY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_UPDATED_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPL_UID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_TYPE_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SERV_CENTER_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OFFICE_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCO_DESIGN_CD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_ZIPCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_FNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_MNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_LNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_SSN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_TITLE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_SUPERVISOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_WORK_PH_NUM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_HOME_PH_NUM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_WORK_FAX_NUM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_EMAIL_ADDR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_MOTHER_NM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_STATUS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_BY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_UPDATED_BY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_UPDATED_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPL_UID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EMPL_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EMPL_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EMPL_ID })
+        </td>
+    </tr>
+}
+
+</table>

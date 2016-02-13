@@ -1,0 +1,111 @@
+﻿@model IEnumerable<OracleSQLTest.Models.CRIS_USER>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LOGIN_NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_PASSWORD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RETRY_ATTEMPTS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_STATUS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATED_BY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATED_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_UPDATE_BY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_UPDATE_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PASSWORD_CHANGE_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PASSWORD_EXP_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_QUESTION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USER_ANSWER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENC_DEC_KEY)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOGIN_NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_PASSWORD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RETRY_ATTEMPTS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_STATUS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_BY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_UPDATE_BY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_UPDATE_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PASSWORD_CHANGE_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PASSWORD_EXP_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_QUESTION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USER_ANSWER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENC_DEC_KEY)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.USER_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.USER_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.USER_ID })
+        </td>
+    </tr>
+}
+
+</table>
